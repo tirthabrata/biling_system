@@ -1,0 +1,648 @@
+package pack1;
+import java.util.*;
+public class Shop
+{
+static Shop ob=new Shop();
+static String[] purchedItemList=new String[10];
+static Scanner sc=new Scanner(System.in);
+void list()
+{
+
+System.out.println("--------------------------------------");
+System.out.println("-------Welcome to Organic Store-------");
+System.out.println();
+System.out.println("-------Buy upto 1000/- or Onwards and get 10% discount--------");
+System.out.println();
+System.out.println("--------------------------------------");
+System.out.println("|         1)Fruits                   |");
+System.out.println("|         2)Vagetables               |");
+System.out.println("|         3)Cosmetics                |");
+System.out.println("|         4)Masala Powd              |");
+System.out.println("|         5)Exit                     |");
+
+Shop ob=new Shop();
+System.out.println("------Please choose your option------");
+int a=sc.nextInt();
+ob.option(a);
+}
+void option(int a)
+{
+switch(a)
+{
+case 1:
+
+new Shop().fruits();
+break;
+case 2:
+
+new Shop().vagetables();
+break;
+case 3:
+
+new Shop().cosmetics();
+break;
+case 4:
+
+new Shop().masalaPowders();
+break;
+case 5:
+
+break;
+}
+
+}
+void fruits()
+{
+System.out.println("|   101)Mango------------1kg---Rs.200--|");
+System.out.println("|   102)Chiku------------1kg---Rs.250--|");
+System.out.println("|   103)Banana-----------1kg---Rs.50 --|");
+System.out.println("|   104)Guava------------1kg---Rs.70 --|");
+System.out.println("|   105)Papaya-----------1kg---Rs.60 --|");
+System.out.println("===Please Choose Your pruduct code:===");
+int a=sc.nextInt();
+new Shop().meth1(a);
+}
+void meth1(int a)
+{
+
+switch (a)
+{
+case 101:
+System.out.println("Yehh!! mango is a good Chice");
+System.out.println("How many kgs do you Want?");
+double d=sc.nextDouble();
+System.out.println("Press 1 to continue");
+System.out.println("Press 2 to Exit");
+int c=sc.nextInt();
+double k=d*200;
+counter=+counter;
+if(c==1)
+{
+ob.list();
+ob.cal(d,a,k,counter);
+
+}
+else
+{
+ob.cal(d,a,k,counter);
+}
+break;
+case 102:
+System.out.println("Yehh!! Apple is a good Chice");
+System.out.println("How many kgs do you Want?");
+double d1=sc.nextDouble();
+System.out.println("Press 1 to continue");
+System.out.println("Press 2 to Exit");
+int c1=sc.nextInt();
+double k1=d1*250;
+counter=+counter;
+if(c1==1)
+{
+ob.list();
+ob.cal(d1,a,k1,counter);
+
+}
+else
+{
+ob.cal(d1,a,k1,counter);
+}
+break;
+case 103:
+System.out.println("Yehh!! Banana is a good Chice");
+System.out.println("How many kgs do you Want?");
+double d2=sc.nextDouble();
+System.out.println("Press 1 to continue");
+System.out.println("Press 2 to Exit");
+int c2=sc.nextInt();
+double k2=d2*50;
+counter=+counter;
+if(c2==1)
+{
+ob.list();
+ob.cal(d2,a,k2,counter);
+
+}
+else
+{
+ob.cal(d2,a,k2,counter);
+}
+break;
+case 104:
+System.out.println("Yehh!! PineApple is a good Chice");
+System.out.println("How many kgs do you Want?");
+double d3=sc.nextDouble();
+System.out.println("Press 1 to continue");
+System.out.println("Press 2 to Exit");
+int c3=sc.nextInt();
+double k3=d3*70;
+counter=+counter;
+if(c3==1)
+{
+ob.list();
+ob.cal(d3,a,k3,counter);
+
+}
+else
+{
+ob.cal(d3,a,k3,counter);
+}
+break;
+case 105:
+System.out.println("Yehh!! Papaya is a good Chice");
+System.out.println("How many kgs do you Want?");
+double d4=sc.nextDouble();
+System.out.println("Press 1 to continue");
+System.out.println("Press 2 to Exit");
+int c4=sc.nextInt();
+double k4=d4*60;
+if(c4==1)
+{
+ob.list();
+ob.cal(d4,a,k4,counter);
+
+}
+else
+{
+ob.cal(d4,a,k4,counter);
+}
+break;
+default:
+System.err.println("Enter a valid input");
+}
+
+
+}
+
+void vagetables()
+{
+System.out.println("|   201)Tomato-----------1kg---Rs.30--|");
+System.out.println("|   202)Ptato------------1kg---Rs.25--|");
+System.out.println("|   203)Brinjal----------1kg---Rs.50--|");
+System.out.println("|   204)Ladyfingure------1kg---Rs.20--|");
+System.out.println("|   205)onion------------1kg---Rs.30--|");
+System.out.println("===Please Choose Your pruduct code:===");
+int a=sc.nextInt();
+new Shop().meth2(a);
+}
+void meth2(int a)
+{
+
+switch (a)
+{
+case 201:
+System.out.println("Yehh!! Tomato is a good Chice");
+System.out.println();
+System.out.println("How many kgs do you Want?");
+double d=sc.nextDouble();
+System.out.println("Press 1 to continue");
+System.out.println("Press 2 to Exit");
+int c=sc.nextInt();
+double k=d*30;
+counter=+counter;
+if(c==1)
+{
+ob.list();
+ob.cal(d,a,k,counter);
+
+
+}
+else
+{
+ob.cal(d,a,k,counter);
+}
+break;
+case 202:
+System.out.println("Yehh!! Patato is a good Chice");
+System.out.println("How many kgs do you Want?");
+double d1=sc.nextDouble();
+System.out.println("Press 1 to continue");
+System.out.println("Press 2 to Exit");
+int c1=sc.nextInt();
+double k1=d1*60;
+counter=+counter;
+if(c1==1)
+{
+ob.list();
+ob.cal(d1,a,k1,counter);
+
+}
+else
+{
+ob.cal(d1,a,k1,counter);
+}
+break;
+case 203:
+System.out.println("Yehh!! Brinjal is a good Chice");
+System.out.println("How many kgs do you Want?");
+double d2=sc.nextDouble();
+System.out.println("Press 1 to continue");
+System.out.println("Press 2 to Exit");
+int c2=sc.nextInt();
+double k2=d2*50;
+counter=+counter;
+if(c2==1)
+{
+ob.list();
+ob.cal(d2,a,k2,counter);
+
+}
+else
+{
+ob.cal(d2,a,k2,counter);
+}
+break;
+case 204:
+System.out.println("Yehh!! Ladyfingure is a good Chice");
+System.out.println("How many kgs do you Want?");
+double d3=sc.nextDouble();
+System.out.println("Press 1 to continue");
+System.out.println("Press 2 to Exit");
+int c3=sc.nextInt();
+double k3=d3*20;
+counter=+counter;
+if(c3==1)
+{
+ob.list();
+ob.cal(d3,a,k3,counter);
+
+}
+else
+{
+ob.cal(d3,a,k3,counter);
+}
+break;
+case 205:
+System.out.println("Yehh!! Papaya is a good Chice");
+System.out.println("How many kgs do you Want?");
+double d4=sc.nextDouble();
+System.out.println("Press 1 to continue");
+System.out.println("Press 2 to Exit");
+int c4=sc.nextInt();
+double k4=d4*30;
+counter=+counter;
+if(c4==1)
+{
+ob.list();
+ob.cal(d4,a,k4,counter);
+
+}
+else
+{
+ob.cal(d4,a,k4,counter);
+}
+break;
+default:
+System.err.println("Enter a valid input");
+}
+
+
+}
+void cosmetics()
+{
+System.out.println("|   301)LipStik----------1---Rs.140--|");
+System.out.println("|   302)kajal------------1---Rs.25---|");
+System.out.println("|   303)FaceWash---------1---Rs.150--|");
+System.out.println("|   304)Lotion-----------1---Rs.80 --|");
+System.out.println("|   305)Scrub------------1---Rs.120--|");
+System.out.println("===Please Choose Your pruduct code:===");
+int a=sc.nextInt();
+new Shop().meth3(a);
+}
+void meth3(int a)
+{
+
+switch (a)
+{
+case 301:
+
+System.out.println();
+System.out.println("How many ps. do you Want?");
+double d=sc.nextDouble();
+System.out.println("Press 1 to continue");
+System.out.println("Press 2 to Exit");
+int c=sc.nextInt();
+double k=d*140;
+counter=+counter;
+if(c==1)
+{
+ob.list();
+ob.cal(d,a,k,counter);
+
+}
+else
+{
+ob.cal(d,a,k,counter);
+}
+break;
+case 302:
+
+System.out.println("How many ps. do you Want?");
+double d1=sc.nextDouble();
+System.out.println("Press 1 to continue");
+System.out.println("Press 2 to Exit");
+int c1=sc.nextInt();
+double k1=d1*25;
+counter=+counter;
+if(c1==1)
+{
+ob.list();
+ob.cal(d1,a,k1,counter);
+
+
+}
+else
+{
+ob.cal(d1,a,k1,counter);
+}
+break;
+case 303:
+
+System.out.println("How many ps do you Want?");
+double d2=sc.nextDouble();
+System.out.println("Press 1 to continue");
+System.out.println("Press 2 to Exit");
+int c2=sc.nextInt();
+double k2=d2*150;
+counter=+counter;
+if(c2==1)
+{
+ob.list();
+ob.cal(d2,a,k2,counter);
+
+}
+else
+{
+ob.cal(d2,a,k2,counter);
+}
+break;
+case 304:
+
+System.out.println("How many ps do you Want?");
+double d3=sc.nextDouble();
+System.out.println("Press 1 to continue");
+System.out.println("Press 2 to Exit");
+int c3=sc.nextInt();
+double k3=d3*80;
+counter=+counter;
+if(c3==1)
+{
+ob.list();
+ob.cal(d3,a,k3,counter);
+
+}
+else
+{
+ob.cal(d3,a,k3,counter);
+}
+break;
+case 305:
+
+System.out.println("How many ps do you Want?");
+double d4=sc.nextDouble();
+System.out.println("Press 1 to continue");
+System.out.println("Press 2 to Exit");
+int c4=sc.nextInt();
+double k4=d4*120;
+counter=+counter;
+if(c4==1)
+{
+ob.list();
+ob.cal(d4,a,k4,counter);
+
+}
+else
+{
+ob.cal(d4,a,k4,counter);
+}
+break;
+default:
+System.err.println("Enter a valid input");
+}
+
+
+}
+void masalaPowders()
+{
+System.out.println("|   401)Chicken----------1---Rs.50--|");
+System.out.println("|   402)Mutton-----------1---Rs.50--|");
+System.out.println("|   403)Termeric---------1---Rs.30--|");
+System.out.println("|   404)TATA salt--------1---Rs.20--|");
+System.out.println("|   405)Red Chilly-------1---Rs.40--|");
+System.out.println("===Please Choose Your pruduct code:===");
+int a=sc.nextInt();
+new Shop().meth4(a);
+}
+static int counter=0;
+void meth4(int a)
+{
+
+switch (a)
+{
+case 401:
+
+System.out.println();
+System.out.println("How many pac. do you Want?");
+double d=sc.nextDouble();
+System.out.println("Press 1 to continue");
+System.out.println("Press 2 to Exit");
+int c=sc.nextInt();
+double k=d*50;
+counter=+counter;
+if(c==1)
+{
+ob.list();
+ob.cal(d,a,k,counter);
+
+}
+else
+{
+ob.cal(d,a,k,counter);
+}
+break;
+case 402:
+
+System.out.println("How many pac. do you Want?");
+double d1=sc.nextDouble();
+System.out.println("Press 1 to continue");
+System.out.println("Press 2 to Exit");
+int c1=sc.nextInt();
+double k1=d1*50;
+counter=+counter;
+if(c1==1)
+{
+ob.list();
+ob.cal(d1,a,k1,counter);
+
+}
+else
+{
+ob.cal(d1,a,k1,counter);
+}
+break;
+case 403:
+
+System.out.println("How many pac. do you Want?");
+double d2=sc.nextDouble();
+System.out.println("Press 1 to continue");
+System.out.println("Press 2 to Exit");
+int c2=sc.nextInt();
+double k2=d2*30;
+if(c2==1)
+{
+counter=+counter;
+ob.list();
+ob.cal(d2,a,k2,counter);
+
+}
+else
+{
+ob.cal(d2,a,k2,counter);
+}
+break;
+case 404:
+
+System.out.println("How many pac. do you Want?");
+double d3=sc.nextDouble();
+System.out.println("Press 1 to continue");
+System.out.println("Press 2 to Exit");
+int c3=sc.nextInt();
+double k3=d3*20;
+if(c3==1)
+{
+counter=+counter;
+ob.list();
+ob.cal(d3,a,k3,counter);
+
+}
+else
+{
+ob.cal(d3,a,k3,counter);
+}
+break;
+case 405:
+
+System.out.println("How many pac. do you Want?");
+double d4=sc.nextDouble();
+System.out.println("Press 1 to continue");
+System.out.println("Press 2 to Exit");
+int c4=sc.nextInt();
+double k4=d4*20;
+
+if(c4==1)
+{
+counter=+counter;
+ob.list();
+ob.cal(d4,a,k4,counter);
+
+}
+else
+{
+ob.cal(d4,a,k4,counter);
+}
+break;
+default:
+System.err.println("Enter a valid input");
+}
+
+
+}
+
+static double total=0;
+static double disTotal=0;
+
+void cal(double a, int i,double d, int count)
+{
+
+if(d>=1000)
+{
+
+double k=d*0.1;
+
+System.out.println("=====================================");
+System.out.println();System.out.println();
+
+
+System.out.println("===============================");
+double e=d-k;
+
+System.out.println("S.no   |   Qty  |       | Price");
+
+System.out.println(i+"     | "+a+"  |       |   "+d);
+System.out.println();
+System.out.println("=================================");
+
+this.total=d+this.total;
+this.disTotal=e+this.disTotal;
+
+}
+else
+{
+System.out.println("S.no   |   Qty  |       | Price");
+
+System.out.println(i+"     | "+a+"  |       |   "+d);
+System.out.println();
+//System.out.println("Your bill is :"+d );
+this.total=d+this.total;
+
+
+}
+
+purchedItemList[count]=count+"   |   "+a+"  | Name                | +"+d;
+counter=counter+this.counter;
+//ob.display();
+
+}
+
+
+public static void main(String[] args)
+{
+
+ob.list();
+System.out.println();
+System.out.println();
+System.out.println("====Enter your name====");
+String n=sc.next();
+System.out.println("====Enter your Mob.NO====");
+String m=sc.next();
+System.out.println("====Enter your Address====");
+String ad=sc.next();
+System.out.println("--------------------------------------");
+System.out.println("-------Welcome to KACAHA BADAM Store-----");
+System.out.println("--------------------------------------");
+
+for(int i=1;i<purchedItemList.length;i++)
+{
+if(purchedItemList[i]!=null)
+{
+System.out.println(purchedItemList[i]);
+}
+}
+System.out.println("Total Price                            : "+total);
+System.out.println();System.out.println();
+System.out.println("   Discount Price : "+total*.1);
+System.out.println();
+System.out.println("Your Final Price is                    :"+disTotal);
+
+System.out.println();
+System.out.println();
+System.out.println("====Thank you for shopping from our store====");
+System.out.println();
+System.out.println("=============================================");
+System.out.println();
+System.out.println("Thank you Mr/mrs: "+n);
+System.out.println("Mobile no.      : "+m);
+System.out.println("Address         : "+ad);
+System.out.println();
+System.out.println();
+System.out.println();
+System.out.println("----Hope you Enjoyed our service----");
+System.out.println();
+System.out.println("=============================================");
+System.out.println();
+System.out.println("=============================================");
+System.out.println();
+System.out.println("++===++JAVA IS AWESOME++===++");
+
+}
+
+}
